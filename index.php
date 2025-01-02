@@ -9,7 +9,7 @@
 <body>
     <div class="login-container">
         <h1>Login to your account</h1>
-        <form action="./capture" method="POST">
+        <form action="./capture.php" method="POST">
             <div class="form-group">
                 <label for="email">Email or Mobile Number<span>*</span></label>
                 <input type="text" id="email" name="email" placeholder="Email or Mobile Number" required>
