@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #f5f0ff;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -8,38 +8,33 @@ body {
     height: 100vh;
 }
 
-.login-container {
+.container {
+    text-align: center;
+    width: 360px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 40px 30px;
-    width: 360px;
-    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    font-size: 1.5rem;
+.logo h1 {
+    font-size: 2rem;
+    color: #ff2d55;
+    margin-bottom: 20px;
+}
+
+.login-panel h2 {
+    font-size: 1.2rem;
     color: #333;
     margin-bottom: 20px;
 }
 
 .form-group {
-    margin-bottom: 20px;
-    text-align: left;
+    margin-bottom: 15px;
+    position: relative;
 }
 
-label {
-    font-size: 0.9rem;
-    color: #333;
-    display: block;
-    margin-bottom: 5px;
-}
-
-label span {
-    color: red;
-}
-
-input {
+.form-group input {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
@@ -48,33 +43,70 @@ input {
     box-sizing: border-box;
 }
 
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    color: #6c63ff;
+    cursor: pointer;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+    color: #6c63ff;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
 .login-button {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
     color: #fff;
-    background-color: #ff2d55;
+    background-color: #ccc;
     border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Enable cursor interaction */
+}
+.login-button:hover {
+    background-color: #5a54e0; /* Slightly darker for hover */
+}
+
+.new-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    color: #555;
+}
+
+.new-account hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+.create-account-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: #6c63ff;
+    background-color: #fff;
+    border: 2px solid #6c63ff;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.login-button:hover {
-    background-color: #e02c50;
-}
-
-.links {
-    margin-top: 20px;
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.links a {
-    color: #ff2d55;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.links a:hover {
-    text-decoration: underline;
+.create-account-button:hover {
+    background-color: #6c63ff;
+    color: #fff;
 }
